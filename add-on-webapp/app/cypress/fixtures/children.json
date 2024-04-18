@@ -1,0 +1,40 @@
+{
+  "columns": [
+    {
+      "name": "uri",
+      "display": null,
+      "show": false
+    },
+    {
+      "name": "label",
+      "display": "Label",
+      "show": true
+    },
+    {
+      "name": "isImported",
+      "display": "Imported",
+      "show": true
+    }
+  ],
+  "commonParameters": [],
+  "values": [
+    {
+      "hasChildren": "1",
+      "isImported": "0",
+      "label": "Child 1",
+      "parentUri": "http://dds.semmtech.nl/asset/Item2",
+      "parentUuid": "urn:uuid:999d3394-13a6-efgh-1234-525400767bfb",
+      "uri": "http://dds.semmtech.nl/asset/Child1",
+      "uuid": "urn:uuid:dc62842d-1234-2f04-2c6d-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "0",
+      "label": "Child 2",
+      "parentUri": "http://dds.semmtech.nl/asset/Item2",
+      "parentUuid": "urn:uuid:999d3394-13a6-efgh-1234-525400767bfb",
+      "uri": "http://dds.semmtech.nl/asset/Child2",
+      "uuid": "urn:uuid:dc62842d-5678-2f04-2c6d-525400767bfb"
+    }
+  ]
+}

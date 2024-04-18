@@ -1,0 +1,18 @@
+[
+  {
+    "errors": [],
+    "importStep": "Import hierarchy",
+    "success": true,
+    "successMessage": "Total rows imported: 1",
+    "warnings": [
+      "Parent (applied conceptual): No identificationvalue found for the ImportNode 'Parent (applied conceptual)'"
+    ]
+  },
+  {
+    "errors": [],
+    "importStep": "Import definition",
+    "success": true,
+    "successMessage": "Total rows imported: 1",
+    "warnings": []
+  }
+]

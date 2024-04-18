@@ -1,0 +1,53 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "homepage": ".",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "3.9.3",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-icons": "3.5.0",
+    "react-scripts": "3.0.0",
+    "react-tooltip": "3.10.0",
+    "reactn": "1.0.0",
+    "styled-components": "4.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 80
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/node": "11.12.2",
+    "@types/react": "16.8.10",
+    "@types/react-dom": "16.8.3",
+    "@types/react-tooltip": "3.9.2",
+    "@types/sinonjs__fake-timers": "6.0.1",
+    "@types/styled-components": "4.1.12",
+    "tslint": "5.14.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-react": "4.0.0",
+    "tslint-react-hooks": "2.0.0",
+    "typescript": "3.8.3"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "columns": [
+    {
+      "name": "uri",
+      "display": null,
+      "show": false
+    },
+    {
+      "name": "label",
+      "display": "Label",
+      "show": true
+    },
+    {
+      "name": "isImported",
+      "display": "Imported",
+      "show": true
+    }
+  ],
+  "commonParameters": [],
+  "values": [
+    {
+      "hasChildren": "0",
+      "isImported": "0",
+      "label": "Last nested Child",
+      "parentUri": "http://dds.semmtech.nl/asset/Child1",
+      "parentUuid": "urn:uuid:dc62842d-1234-2f04-2c6d-525400767bfb",
+      "uri": "http://dds.semmtech.nl/asset/Child10",
+      "uuid": "urn:uuid:dc62842d-lol9-2f04-2c6d-525400767bfb"
+    }
+  ]
+}

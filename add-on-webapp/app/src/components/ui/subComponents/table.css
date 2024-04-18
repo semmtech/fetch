@@ -1,0 +1,28 @@
+.ReactTable .rt-thead {
+  overflow-y: scroll;
+  display: contents;
+}
+
+.ReactTable .rt-thead::-webkit-scrollbar {
+  background: transparent;
+}
+
+.extraClass {
+  opacity: 1;
+  max-width: 95%;
+  font-size: 12px;
+}
+
+.ReactTable .rt-tbody::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ReactTable .rt-tbody::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: darkgrey;
+}
+
+.ReactTable .rt-tbody::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #cccccc;
+}

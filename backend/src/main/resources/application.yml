@@ -1,0 +1,34 @@
+server:
+  port: 8091
+  basedomain: http://localhost:8091
+  servlet:
+    session:
+      timeout: 120m
+spring:
+  data:
+    mongodb:
+      uri: mongodb://admin:password@localhost:27017/admin
+      database: fetch
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: true
+logging:
+  level:
+    com:
+      semmtech: INFO
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: INFO
+        ws:
+          client:
+            MessageTracing:
+              sent: INFO
+      mongodb:
+        driver: INFO
+fetch:
+  relatics:
+    timeout: 20
+

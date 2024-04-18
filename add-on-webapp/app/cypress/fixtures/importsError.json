@@ -1,0 +1,19 @@
+[
+  {
+    "errors": ["The import failed", "No id found"],
+    "importStep": "Import hierarchy",
+    "success": false,
+    "successMessage": "",
+    "warnings": [
+      "Parent (applied conceptual): No identificationvalue found for the ImportNode 'Parent (applied conceptual)'",
+      "This step has failed, contact admin"
+    ]
+  },
+  {
+    "errors": [],
+    "importStep": "Import definition",
+    "success": true,
+    "successMessage": "Total rows imported: 1",
+    "warnings": []
+  }
+]

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema"
+                  xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+                  xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+                  xmlns:tns="http://www.relatics.com/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:jxb="http://java.sun.com/xml/ns/jaxb" jxb:version="2.1"
+                  targetNamespace="http://www.relatics.com/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.relatics.com/">
+      <s:element name="GetResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Operation" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Identification">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="Identification">
+                    <s:complexType>
+                      <s:annotation>
+                        <s:appinfo>
+                          <jxb:class name="InnerIdentification"/>
+                        </s:appinfo>
+                      </s:annotation>
+                      <s:sequence>
+                        <s:element name="Workspace" type="s:string"/>
+                      </s:sequence>
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Parameters">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Authentication">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="Authentication">
+                    <s:complexType>
+                      <s:annotation>
+                        <s:appinfo>
+                          <jxb:class name="InnerAuthentication"/>
+                        </s:appinfo>
+                      </s:annotation>
+                      <s:sequence>
+                        <s:element name="Entrycode" type="s:string"/>
+                      </s:sequence>
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResultResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element name="Report">
+                      <s:complexType>
+                          <s:sequence>
+                              <s:element name="ReportPart">
+                                  <s:complexType>
+                                      <s:sequence>
+                                          <s:element name="generic" maxOccurs="unbounded">
+                                            <s:complexType>
+                                              <s:simpleContent>
+                                                <s:extension base="s:string">
+                                                  <s:attribute name="ForeignKey" type="s:string" />
+                                                </s:extension>
+                                              </s:simpleContent>
+                                            </s:complexType>
+                                          </s:element>
+                                      </s:sequence>
+                                  </s:complexType>
+                              </s:element>
+                          </s:sequence>
+                          <s:attribute name="xmlns" type="s:string"></s:attribute>
+                          <s:attribute name="ReportName" type="s:string"></s:attribute>
+                          <s:attribute name="GeneratedOn" type="s:date"></s:attribute>
+                          <s:attribute name="EnvironmentID" type="s:string"></s:attribute>
+                          <s:attribute name="EnvironmentName" type="s:string"></s:attribute>
+                          <s:attribute name="EnvironmentURL" type="s:string"></s:attribute>
+                          <s:attribute name="WorkspaceID" type="s:string"></s:attribute>
+                          <s:attribute name="WorkspaceName" type="s:string"></s:attribute>
+                          <s:attribute name="TargetDevice" type="s:string"></s:attribute>
+                      </s:complexType>
+                  </s:element>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Import">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Operation" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Identification">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="Identification">
+                    <s:complexType>
+                      <s:annotation>
+                        <s:appinfo>
+                          <jxb:class name="InnerIdentification"/>
+                        </s:appinfo>
+                      </s:annotation>
+                      <s:sequence>
+                        <s:element name="Workspace" type="s:string"/>
+                      </s:sequence>
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Authentication">
+              <s:complexType>
+                <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="Authentication">
+                    <s:complexType>
+                      <s:annotation>
+                        <s:appinfo>
+                          <jxb:class name="InnerAuthentication"/>
+                        </s:appinfo>
+                      </s:annotation>
+                      <s:sequence>
+                        <s:element name="Entrycode" type="s:string"/>
+                      </s:sequence>
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="Filename" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ImportResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element name="Import" minOccurs="0">
+                    <s:complexType>
+                      <s:sequence>
+                        <s:element name="Message" minOccurs="0" maxOccurs="unbounded" >
+                          <s:complexType>
+                            <s:simpleContent>
+                              <s:extension base="s:string">
+                                <s:attribute name="Time" type="s:time" />
+                                <s:attribute name="Result" type="s:string" />
+                              </s:extension>
+                            </s:simpleContent>
+                          </s:complexType>
+                        </s:element>
+                        <s:element name="Elements" minOccurs="0" maxOccurs="1">
+                          <s:complexType>
+                            <s:sequence>
+                              <s:element name="Element" minOccurs="0" maxOccurs="unbounded">
+                                <s:complexType>
+                                  <s:simpleContent>
+                                    <s:extension base="s:string">
+                                      <s:attribute name="Action" type="s:string" />
+                                      <s:attribute name="ID" type="s:string" />
+                                      <s:attribute name="ForeignKey" type="s:string" />
+                                    </s:extension>
+                                  </s:simpleContent>
+                                </s:complexType>
+                              </s:element>
+                            </s:sequence>
+                          </s:complexType>
+                        </s:element>
+                      </s:sequence>
+                    </s:complexType>
+                  </s:element>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetResultSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResult"/>
+  </wsdl:message>
+  <wsdl:message name="GetResultSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResultResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ImportSoapIn">
+    <wsdl:part name="parameters" element="tns:Import"/>
+  </wsdl:message>
+  <wsdl:message name="ImportSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="DataExchangeSoap">
+    <wsdl:operation name="GetResult">
+      <wsdl:input message="tns:GetResultSoapIn"/>
+      <wsdl:output message="tns:GetResultSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Import">
+      <wsdl:input message="tns:ImportSoapIn"/>
+      <wsdl:output message="tns:ImportSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DataExchangeHttpGet"/>
+  <wsdl:portType name="DataExchangeHttpPost"/>
+  <wsdl:binding name="DataExchangeSoap" type="tns:DataExchangeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetResult">
+      <soap:operation soapAction="http://www.relatics.com/GetResult" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Import">
+      <soap:operation soapAction="http://www.relatics.com/Import" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataExchangeSoap12" type="tns:DataExchangeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetResult">
+      <soap12:operation soapAction="http://www.relatics.com/GetResult" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Import">
+      <soap12:operation soapAction="http://www.relatics.com/Import" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataExchangeHttpGet" type="tns:DataExchangeHttpGet">
+    <http:binding verb="GET"/>
+  </wsdl:binding>
+  <wsdl:binding name="DataExchangeHttpPost" type="tns:DataExchangeHttpPost">
+    <http:binding verb="POST"/>
+  </wsdl:binding>
+</wsdl:definitions>

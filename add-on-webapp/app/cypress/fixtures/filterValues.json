@@ -1,0 +1,30 @@
+[
+  {
+    "key": "http://dds.semmtech.nl/asset/Garage",
+    "value": "Garage"
+  },
+  {
+    "key": "http://dds.semmtech.nl/asset/GarageTwo",
+    "value": "GarageTwo"
+  },
+  {
+    "key": "http://dds.semmtech.nl/asset/GarageFour",
+    "value": "GarageFour"
+  },
+  {
+    "key": "http://dds.semmtech.nl/asset/GarageFive",
+    "value": "GarageFive"
+  },
+  {
+    "key": "http://dds.semmtech.nl/asset/GarageThree",
+    "value": "GarageThree"
+  },
+  {
+    "key": "http://dds.semmtech.nl/asset/DienstGebouw",
+    "value": "DienstGebouw"
+  },
+  {
+    "key": "http://dds.semmtech.nl/asset/Item",
+    "value": "Item"
+  }
+]

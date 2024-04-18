@@ -1,0 +1,132 @@
+{
+  "columns": [
+    {
+      "name": "uri",
+      "display": null,
+      "show": false
+    },
+    {
+      "name": "label",
+      "display": "Label",
+      "show": true
+    },
+    {
+      "name": "isImported",
+      "display": "Imported",
+      "show": true
+    }
+  ],
+  "commonParameters": [],
+  "filters": [],
+  "values": [
+    {
+      "hasChildren": "0",
+      "isImported": "0",
+      "label": "Bunker",
+      "uri": "http://dds.semmtech.nl/asset/Bunker",
+      "uuid": "urn:uuid:999d3394-13a6-opqr-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "1",
+      "isImported": "1",
+      "label": "DienstGebouw",
+      "uri": "http://dds.semmtech.nl/asset/DienstGebouw",
+      "uuid": "urn:uuid:999d3394-13a6-cdef-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "1",
+      "label": "Garage",
+      "uri": "http://dds.semmtech.nl/asset/Garage",
+      "uuid": "urn:uuid:999d3394-13a6-ghij-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "1",
+      "isImported": "0",
+      "label": "Gym",
+      "uri": "http://dds.semmtech.nl/asset/Gym",
+      "uuid": "urn:uuid:999d3394-13a6-lol1-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "1",
+      "label": "Item 1",
+      "uri": "http://dds.semmtech.nl/asset/Item1",
+      "uuid": "urn:uuid:999d3394-13a6-abcd-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "1",
+      "isImported": "0",
+      "label": "Item 2",
+      "uri": "http://dds.semmtech.nl/asset/Item2",
+      "uuid": "urn:uuid:999d3394-13a6-efgh-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "1",
+      "label": "Item 3",
+      "uri": "http://dds.semmtech.nl/asset/Item3",
+      "uuid": "urn:uuid:999d3394-13a6-ijkl-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "0",
+      "label": "Item 4",
+      "uri": "http://dds.semmtech.nl/asset/Item4",
+      "uuid": "urn:uuid:999d3394-13a6-mnop-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "1",
+      "isImported": "0",
+      "label": "Item 5",
+      "uri": "http://dds.semmtech.nl/asset/Item5",
+      "uuid": "urn:uuid:999d3394-13a6-qrst-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "0",
+      "label": "Kantoor",
+      "uri": "http://dds.semmtech.nl/asset/Kantoor",
+      "uuid": "urn:uuid:999d3394-13a6-uvwx-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "0",
+      "label": "MeetingRoom",
+      "uri": "http://dds.semmtech.nl/asset/MeetingRoom",
+      "uuid": "urn:uuid:999d3394-13a6-yzab-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "1",
+      "label": "Pool",
+      "uri": "http://dds.semmtech.nl/asset/Pool",
+      "uuid": "urn:uuid:999d3394-13a6-lol2-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "0",
+      "label": "Toilet",
+      "uri": "http://dds.semmtech.nl/asset/Toilet",
+      "uuid": "urn:uuid:999d3394-13a6-stuv-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "0",
+      "isImported": "0",
+      "label": "bathroom",
+      "uri": "http://dds.semmtech.nl/asset/bathroom",
+      "uuid": "urn:uuid:999d3394-13a6-wxyz-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "1",
+      "isImported": "0",
+      "label": "kelder",
+      "uri": "http://dds.semmtech.nl/asset/kelder",
+      "uuid": "urn:uuid:999d3394-13a6-klmn-1234-525400767bfb"
+    }
+  ],
+  "visualizationMetadata": {
+    "enablePagination": false,
+    "title": "Physical objects"
+  }
+}

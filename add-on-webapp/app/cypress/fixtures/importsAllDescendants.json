@@ -1,0 +1,16 @@
+[
+  {
+    "errors": [],
+    "importStep": "Import hierarchy",
+    "success": true,
+    "successMessage": "Total rows imported: more than 10",
+    "warnings": []
+  },
+  {
+    "errors": [],
+    "importStep": "Import definition",
+    "success": true,
+    "successMessage": "Total rows imported: more than 10",
+    "warnings": []
+  }
+]

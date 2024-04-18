@@ -1,0 +1,28 @@
+http:
+  port: 8080
+server:
+  port: 8443
+  basedomain: https://localhost:8443
+  ssl:
+    key-store: keystore.p12
+    key-store-password: lacesfetch
+    keyStoreType: PKCS12
+    keyAlias: tomcat
+  tomcat:
+    protocol-header: x-forwarded-proto
+spring:
+  data:
+    mongodb:
+      uri: mongodb://admin:password@localhost:27017/fetch
+  main:
+    allow-bean-definition-overriding: true
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+      mongodb:
+        driver: DEBUG

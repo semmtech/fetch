@@ -1,0 +1,40 @@
+<html>
+<body>
+    <div id="container-liebjff2b6ov2p8mdaw"></div>
+    <script type="text/javascript" src="http://localhost:8091/add-on/integration.js"></script>
+    <script type="text/javascript">
+        window.RELATICS_SIMULATION = true;
+
+        function getWID() {
+            return 'ec493525-1234-5678-abde-81359b4d08f6';
+        }
+
+        function getUsername() {
+            return 'semmtech';
+        }
+
+        settings = {
+            configurationId: "6479ab37a7b11b00014f28a3",
+            containerId: "container-liebjff2b6ov2p8mdaw",
+            instanceId: "iframe-liebjff2qvfcjpeofpm",
+            urlParameters: new Array(
+                { id: 'wid', type: 'literal' },
+                { id: 'username', type: 'literal' },
+                { id: 'subjectId', type: 'literal' }
+            ),
+            baseUrl: "http://localhost:8091/add-on/",
+            height: {
+                max: '800px',
+                min: '400px'
+            }
+        };
+
+        createAddonIframe(settings.baseUrl,
+            settings.configurationId,
+            settings.containerId,
+            settings.instanceId,
+            settings.urlParameters,
+            settings.height);
+    </script>
+</body>
+</html>

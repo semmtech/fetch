@@ -1,0 +1,23 @@
+version: "3"
+services:
+
+    mongodb:
+        image: mongo:5.0
+        restart: always
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: "admin"
+            MONGO_INITDB_ROOT_PASSWORD: "password"
+        ports:
+            - "27017:27017"
+
+    fetch:
+        build: ./backend
+        restart: always
+        ports:
+            - "8091:8091"
+            - "5005:5005"
+        environment:
+            SPRING_DATA_MONGODB_URI: "mongodb://admin:password@mongodb:27017/admin"
+            SPRING_DATA_MONGODB_DATABASE: "fetch"
+        depends_on:
+            - mongodb

@@ -1,0 +1,81 @@
+{
+  "name": "app",
+  "homepage": ".",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/core": "1.3.13",
+    "@date-io/date-fns": "1.3.13",
+    "@material-ui/core": "4.7.0",
+    "@material-ui/icons": "4.5.1",
+    "@material-ui/lab": "4.0.0-alpha.33",
+    "@material-ui/pickers": "3.2.10",
+    "clipboard-copy": "3.1.0",
+    "date-fns": "2.14.0",
+    "immer": "6.0.9",
+    "lodash": "4.17.15",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-beautiful-dnd": "13.0.0",
+    "react-dom": "16.13.1",
+    "react-icons": "3.10.0",
+    "react-is": "16.13.1",
+    "react-redux": "7.2.0",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "3.0.0-next.68",
+    "react-table": "6.10.0",
+    "react-toastify": "5.5.0",
+    "reactn": "2.1.4",
+    "redux": "4.0.5",
+    "styled-components": "5.1.1",
+    "uniqid": "5.2.0",
+    "yasgui-yasqe": "2.11.22"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build  --progress",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cypress": "cypress open",
+    "cypress:all:chrome": "cypress run --browser chrome"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 80
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/jest": "24.0.9",
+    "@types/lodash": "4.14.134",
+    "@types/node": "11.9.5",
+    "@types/react": "16.8.5",
+    "@types/react-beautiful-dnd": "11.0.3",
+    "@types/react-dom": "16.8.2",
+    "@types/react-router": "4.4.4",
+    "@types/react-router-dom": "4.3.1",
+    "@types/react-table": "6.8.5",
+    "@types/styled-components": "4.1.12",
+    "@types/uniqid": "4.1.3",
+    "cypress": "4.8.0",
+    "react-testing-library": "6.1.2",
+    "tslint": "5.14.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-react": "4.0.0",
+    "tslint-react-hooks": "2.0.0",
+    "typescript": "3.8.3"
+  }
+}

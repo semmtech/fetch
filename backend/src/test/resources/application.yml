@@ -1,0 +1,9 @@
+synchronizeMongoDB: false
+server:
+  port: 8091
+  basedomain: http://localhost:8091
+spring:
+  data:
+    mongodb:
+      uri: mongodb://nomongo/nodb
+      database: nodb

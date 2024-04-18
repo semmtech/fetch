@@ -1,0 +1,54 @@
+{
+  "columns": [
+    {
+      "name": "uri",
+      "display": null,
+      "show": false
+    },
+    {
+      "name": "label",
+      "display": "Label",
+      "show": true
+    },
+    {
+      "name": "isImported",
+      "display": "Imported",
+      "show": true
+    }
+  ],
+  "commonParameters": [],
+  "filters": [
+    {
+      "name": "URI",
+      "query": "12345",
+      "type": "SPARQL Picklist",
+      "variable": "filterUri"
+    },
+    {
+      "name": "Name",
+      "query": null,
+      "type": "Text",
+      "variable": "filterLabel"
+    }
+  ],
+  "values": [
+    {
+      "hasChildren": "0",
+      "isImported": "1",
+      "label": "Item 1",
+      "uri": "http://dds.semmtech.nl/asset/Item1",
+      "uuid": "urn:uuid:999d3394-13a6-abcd-1234-525400767bfb"
+    },
+    {
+      "hasChildren": "1",
+      "isImported": "0",
+      "label": "Item 2",
+      "uri": "http://dds.semmtech.nl/asset/Item2",
+      "uuid": "urn:uuid:999d3394-13a6-efgh-1234-525400767bfb"
+    }
+  ],
+  "visualizationMetadata": {
+    "enablePagination": true,
+    "title": "Physical objects"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "columns": [
+    {
+      "name": "uri",
+      "display": null,
+      "show": false
+    },
+    {
+      "name": "label",
+      "display": "Label",
+      "show": true
+    },
+    {
+      "name": "isImported",
+      "display": "Imported",
+      "show": true
+    }
+  ],
+  "commonParameters": [],
+  "values": [],
+  "filters": [],
+  "visualizationMetadata": {
+    "enablePagination": false,
+    "title": "Empty values",
+    "subtitle": "This is the subtitle"
+  }
+}
