@@ -84,4 +84,4 @@ mvn package spring-boot:run -Dspring.profiles.active=https,httpslocal
 
 ## Disclaimer
 
-The code within this project is offered as-is.
+The code within this project is offered as-is, and since 2021 has not been actively being developed.
